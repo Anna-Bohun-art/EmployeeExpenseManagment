@@ -1,0 +1,9 @@
+package managment;
+
+import com.virtualprogrammers.expenses.domain.Employee;
+import com.virtualprogrammers.expenses.domain.ExpenseClaim;
+
+public interface ExpenseManagementProcess {
+    public int registerExpenseClaim(ExpenseClaim claim);
+    public boolean approveClaim(int id, Employee employee);
+}
